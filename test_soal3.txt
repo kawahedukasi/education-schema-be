@@ -1,0 +1,19 @@
+//Haikal Ferdian
+//test soal 3
+//Kawah Edukasi Batch III
+
+//1 menampilkan peserta dengan gaji tertinggi
+
+SELECT * FROM `kawahedukasi` WHERE gaji = (SELECT MAX(gaji) FROM kawahedukasi);
+
+//2 menampilkan peserta Backend dengan nilai dan gaji tertinggi
+
+SELECT *, MAX(nilai),MAX(gaji) FROM `kawahedukasi` WHERE kelas='BACKEND';
+
+//3 menampilkan total peserta yang berada dalam kelas frontend 
+
+SELECT COUNT(nama) AS Total FROM `kawahedukasi` WHERE kelas='FRONTEND';
+
+//4 menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+
+SELECT *,MAX(jumlah_kehadiran),MAX(nilai) FROM `kawahedukasi` WHERE kelas='FRONTEND';
