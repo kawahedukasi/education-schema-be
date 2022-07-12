@@ -1,0 +1,15 @@
+3. Program query
+
+    - Query untuk menampilkan peserta dengan gaji tertinggi
+        SELECT * FROM kawahedukasi ORDER BY gaji DESC LIMIT 1;
+        
+    - Query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+        SELECT * FROM kawahedukasi WHERE kelas = 'BACKEND' ORDER BY nilai, gaji DESC LIMIT 1;
+
+    - Query untuk melihat total peserta yang berada dalam kelas frontend
+        SELECT COUNT(id) as 'Total Peserta' FROM kawahedukasi WHERE kelas = 'FRONTEND';
+
+    - Query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+        SELECT max(jumlah_kehadiran), max(nilai) FROM kawahedukasi WHERE kelas = 'FRONTEND';
+
+
