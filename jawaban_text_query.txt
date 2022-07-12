@@ -1,0 +1,19 @@
+MUHAMMAD SANDY PUTRA RIYADI - instagram : @msandypr
+
+3. buatlah program query yang sudah di sediakan import query kedalam  db untuk melihat data table 
+
+- buatlah query untuk menampilkan peserta dengan gaji tertinggi
+JAWABAN :
+SELECT * FROM `kawahedukasi` ORDER BY `kawahedukasi`.`gaji` DESC LIMIT 1
+
+- buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+JAWABAN :
+SELECT * FROM `kawahedukasi` WHERE `kelas` = 'BACKEND' ORDER BY `kawahedukasi`.`nilai` DESC, `kawahedukasi`.`gaji` DESC LIMIT 1
+
+- buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+JAWABAN :
+SELECT COUNT(`nama`) FROM `kawahedukasi` WHERE `kelas` = 'FRONTEND'
+
+- buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+SELECT MAX(`nilai`) AS `nilai_tertinggi`, MAX(`jumlah_kehadiran`) AS `jumlah_kehadiran_tertinggi` FROM `kawahedukasi` WHERE `kelas` = 'FRONTEND'
+
