@@ -1,0 +1,27 @@
+// No. 3.1
+// Query untuk menampilkan peserta dengan gaji tertinggi
+// jawaban: dani muharam
+
+USE kawahedukasi;
+SELECT * FROM kawahedukasi WHERE 1 ORDER BY gaji DESC LIMIT 1;
+
+// No 3.2
+// Query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+// jawaban: Aldan
+
+USE kawahedukasi;
+SELECT * FROM kawahedukasi WHERE kelas='BACKEND' ORDER BY gaji DESC, nilai DESC LIMIT 1;
+
+// No 3.3
+// Query untuk melihat total peserta yang berada dalam kelas frontend
+// jawaban: 6
+
+USE kawahedukasi;
+SELECT COUNT(*) AS total_peserta_frontend FROM kawahedukasi WHERE kelas='FRONTEND';
+
+// No 3.4
+// Query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+// jawaban: dani muharam
+
+USE kawahedukasi;
+SELECT * FROM kawahedukasi WHERE kelas='FRONTEND' ORDER BY jumlah_kehadiran DESC, nilai DESC LIMIT 1;
