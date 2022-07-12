@@ -1,0 +1,13 @@
+//1 menampilkan peserta dengan gaji tertinggi
+select nama,MAX(gaji) as gaji from kawahedukasi;
+
+//2 menampilkan peserta Backend dengan nilai dan gaji tertinggi
+select nama,MAX(nilai) as nilai,MAX(gaji) as gaji from kawahedukasi where kelas='BACKEND'
+
+//3 menampilkan total peserta yang berada dalam kelas frontend 
+
+select COUNT(*) as total_peserta_frontend from kawahedukasi WHERE kelas='FRONTEND'
+
+//4 menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+
+select nama,MAX(jumlah_kehadiran) as jumlah_kehadiran,MAX(nilai) as nilai from kawahedukasi where kelas='FRONTEND'
