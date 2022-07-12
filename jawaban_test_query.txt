@@ -1,0 +1,12 @@
+SQL
+
+1. select * from kawahedukasi where gaji=(select Max(gaji) from kawahedukasi);
+
+
+2. SELECT * from kawahedukasi WHERE nilai = (SELECT MAX(nilai) FROM kawahedukasi) AND gaji =(SELECT MAX(gaji) from kawahedukasi WHERE kelas = "BACKEND");
+
+3. SELECT COUNT(kelas) AS Total_Peserta_FrontEnd
+FROM kawahedukasi
+WHERE kelas = "FRONTEND";
+
+4. SELECT MAX(jumlah_kehadiran) AS Jumlah_Kehadiran_Tertinggi_Kelas_FrontEnd,MAX(nilai) AS Nilai_Tertinggi_Kelas_FrontEnd FROM `kawahedukasi` WHERE kelas = "FRONTEND";
