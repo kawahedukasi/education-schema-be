@@ -1,0 +1,4 @@
+SELECT * FROM kawahedukasi ORDER BY gaji DESC LIMIT 1 
+SELECT * FROM kawahedukasi WHERE kelas="BACKEND" ORDER BY nilai,gaji DESC LIMIT 1
+SELECT COUNT(kelas) AS JUMLAH_FRONTEND FROM kawahedukasi where kelas="FRONTEND"
+SELECT MAX(gaji),MAX(jumlah_kehadiran) FROM kawahedukasi WHERE kelas="FRONTEND"
