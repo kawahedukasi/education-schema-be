@@ -1,0 +1,4 @@
+SELECT MAX(gaji) FROM kawahedukasi; 
+SELECT MAX(gaji) AS Gaji, MAX(nilai) AS Nilai FROM kawahedukasi WHERE kelas = 'BACKEND';
+SELECT COUNT(nama) AS Jumlah FROM kawahedukasi WHERE kelas = 'FRONTEND';
+SELECT MAX(jumlah_kehadiran) AS Kehadiran, MAX(nilai) AS Nilai FROM kawahedukasi WHERE kelas = 'FRONTEND';
