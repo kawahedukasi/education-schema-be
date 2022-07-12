@@ -1,0 +1,7 @@
+SELECT * FROM `kawahedukasi` ORDER BY gaji DESC LIMIT 1;
+
+SELECT * FROM `kawahedukasi` WHERE kelas = 'BACKEND' ORDER BY nilai, gaji DESC LIMIT 1;
+
+SELECT COUNT(*) AS total_peserta FROM `kawahedukasi` WHERE kelas = 'FRONTEND';
+
+SELECT MAX(jumlah_kehadiran) AS jumlah_kehadiran_tertinggi, MAX(nilai) nilai_tertinggi FROM `kawahedukasi` WHERE kelas = 'FRONTEND';
