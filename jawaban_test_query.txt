@@ -1,0 +1,14 @@
+Nama : inri veronika togatorop
+Alamat Email: inritogatorop369@gmail.com
+
+    - buatlah query untuk menampilkan peserta dengan gaji tertinggi
+    SELECT max(gaji) FROM kawahedukasi
+
+    - buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+    SELECT max(nilai), max(gaji) FROM kawahedukasi
+
+    - buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+    SELECT COUNT(FRONTED) AS kelas FROM kawahedukasi
+
+    - buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+    SELECT max(nilai), max(jumlah_kehadiran) AS kelas FROM kawahedukasi
