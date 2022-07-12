@@ -1,0 +1,4 @@
+SELECT nama, MAX(gaji)AS gaji_tertinggi FROM `kawahedukasi`;
+SELECT nama, kelas, MAX(nilai)nilai_tertinggi,MAX(gaji)AS gaji_tertinggi FROM `kawahedukasi`WHERE kelas = "backend";
+SELECT COUNT(*)total_peserta_frontend FROM `kawahedukasi`WHERE kelas = "frontend";
+SELECT MAX(jumlah_kehadiran),MAX(nilai) FROM `kawahedukasi`WHERE kelas = "frontend";
