@@ -2,9 +2,13 @@
 
 $data = [1, "ka", 67, "wah", "1772", "edukasi", 7, 98, -1];
 
-for($i = 0; $i <= count($data); $i++) {
-    $tipenya = gettype($i);
-    echo "- index ke $i adalah $tipenya dengan data $data[$i]\n";
+for($i = 0; $i < count($data); $i++) {
+    if($data[$i] < 0) {
+        echo "Tidak bisa di validasi sistem";
+    } else {
+        $tipenya = gettype($data[$i]);
+        echo "- index ke $i adalah $tipenya dengan data $data[$i]\n";
+    }
 }
 
 
