@@ -1,0 +1,97 @@
+Isilah data pribadi : 
+
+Nama : Nurul Hajijah
+Alamat Email: nurulhajijah181@gmail.com
+Waktu Mulai :
+Waktu Selesai :
+
+CARA PENGERJAAN!!!
+
+buatlah file baru sesuai dengan number PERTANYAAN
+
+contoh: test_soal1.java
+
+untuk jawaban query silahkan buat file dengan format jawaban_test_query.txt
+
+PERTANYAAN !!
+
+1. Kami mempunyai data array dengan nama variable  data : 
+
+    var data = [1, 2, 4, 3, 10, 11, 20, 5, 100, 200];
+
+    - buatlah program FizzBuzz dengan looping: 
+        - Jika angka yang keluar adalah angka 5 maka output yang di hasilkan adalah "Fizz"
+        - Jika angka yang keluar adalah angka 11 maka output yang di hasilkan adalah "Buzz"
+        - Jika angka yang keluar adalah 5 dan 11 maka output yang di hasilkan adalah "FizzBuzz"
+
+2. Buatlah program untuk pengecekan tipe data:
+
+    var data = [1, "ka", 67, "wah", "1772", "edukasi", 7, 98, -1];
+
+    hasil yang di inginkan: 
+    - index ke 0 adalah integer dengan data 1
+    - index ke 1 adalah string dengan data kawah
+    - dan jika nilai dari index itu kurang dari  0 maka keluarkan output:  Tidak bisa di validasi sistem
+
+    contoh : 
+    var contoh = [1, "mantap", 0 ];
+    expektasi output: 
+    - index ke 0 adalah integer dengan data 1
+    - index ke 1 adalah string dengan data mantap
+    - index ke 2 Tidak bisa di validasi sistem
+
+    buatlah programnya sampai semua data tervalidasi
+
+3. buatlah program query yang sudah di sediakan import query kedalam  db untuk melihat data table 
+
+    - buatlah query untuk menampilkan peserta dengan gaji tertinggi
+    - buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+    - buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+    - buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+    
+    JAWABAN :
+    no.1
+    Progam
+    #include <iostream>
+
+int main() {
+
+        // Menampilkan Angka 1,2,4,3,10,11,20,5,100,200 Dengan MenggunakanPerulangan For
+    for(int i = 1; i <=200; i++)
+            // Jika angka yang keluar adalah angka 5, maka akan menampilkan "Fizz"
+         if(i % 5 == 0){
+                std::cout << "Fizz\n";
+        }
+            // Jika angka yang keluar adalah angka 11, maka akan menampilkan "Buzz"
+        else if(i % 11 == 0){
+                std::cout << "Buzz\n";
+        }
+            // ika angka merupakan kelipatan 5, maka akan menampilkan "Buzz"
+        else if(i % 5 == 0){
+                std::cout << "Buzz\n";
+        }
+            // Selain angka yang berkelipatan 5 dan 11, maka akan menampilkan "fizzBuzz"
+        else{
+             if(i % 5 == 0 && i % 5 == 0){
+                std::cout << "FizzBuzz\n";
+        }
+  }
+  return 0;
+}
+
+no.2
+program
+console.log(typeof "Abcde"); // "string"
+console.log(typeof 500000);  // "number"
+console.log(typeof false);   // "boolean"
+console.log(typeof (req, res) => {res.status(200)}); // "function"
+
+console.log(typeof 3.142);      // "number"
+console.log(typeof NaN);        // "number"
+console.log(typeof null);       // "object"
+console.log(typeof []);         // "object"
+console.log(typeof {});         // "object"
+console.log(typeof /[a-z]*/gi); // "object"
+
+console.log(typeof new String(1));
+// "object", karena memanggil Constructor yang berada di dalam Object/Class bernama String
