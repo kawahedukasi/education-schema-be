@@ -1,0 +1,4 @@
+- SELECT max(gaji) AS max_gaji FROM `kawahedukasi`;
+- SELECT * FROM `kawahedukasi` WHERE gaji = (SELECT MAX(gaji) FROM `kawahedukasi` WHERE `kawahedukasi`.`kelas` = 'BACKEND') AND nilai = (SELECT MAX(nilai) FROM `kawahedukasi` WHERE `kawahedukasi`.`kelas` = 'BACKEND');
+- SELECT COUNT(id) AS count_peserta FROM `kawahedukasi` WHERE `kelas` = 'FRONTEND';
+- SELECT MAX(jumlah_kehadiran) AS max_kehadiran_tertinggi, MAX(nilai) AS max_nilai_tertinggi FROM `kawahedukasi` WHERE `kawahedukasi`.`kelas` = 'FRONTEND';
