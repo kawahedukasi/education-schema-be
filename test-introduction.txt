@@ -3,7 +3,11 @@ Isilah data pribadi :
 Nama : Ardaya Imam Pratama 
 Alamat Email: ardayaimamp@gmail.com 
 Waktu Mulai : 10.20
+<<<<<<< HEAD
 Waktu Selesai : 14.25
+=======
+Waktu Selesai : 13.30
+>>>>>>> 1656cd3577a477e83bbc7a276d11b96357574c4e
 
 CARA PENGERJAAN!!!
 
