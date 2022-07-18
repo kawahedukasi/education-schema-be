@@ -1,15 +1,15 @@
 public class soal_test1 {
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 200; i++){
-            if ((i % 5 == 0) && (i % 11 == 0)){
-                System.out.println("FizzBuzz");
-            } else if (i % 5 == 0) {
+        int[] data = {1, 2, 4, 3, 10, 11, 20, 5, 100, 200};
+
+        for (int angka : data) {
+            if (angka == 5) {
                 System.out.println("Fizz");
-            } else if (i % 11 == 0) {
+            } else if (angka == 11) {
                 System.out.println("Buzz");
             } else {
-                System.err.println(i);
+                System.err.println(angka);
             }
         }
         
