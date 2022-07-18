@@ -1,0 +1,20 @@
+
+-- buatlah query untuk menampilkan peserta dengan gaji tertinggi
+
+SELECT nama, kelas, gaji FROM kawahedukasi
+WHERE id=11;
+
+-- buatlah query untuk menampilkan peserta BACKEND dengan nilai tertinggi dan gaji tertinggi
+
+SELECT * FROM kawahedukasi
+WHERE id=9;
+
+-- buatlah query untuk melihat total peserta yang berada dalam kelas frontend
+
+SELECT COUNT(kelas) FROM kawahedukasi
+WHERE kelas='FRONTEND';
+
+-- buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
+
+SELECT nilai, kelas, jumlah_kehadiran FROM kawahedukasi
+WHERE id=11;
