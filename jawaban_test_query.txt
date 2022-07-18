@@ -9,18 +9,18 @@ Jawab :
 
 SELECT kelas, nama, MAX(nilai), MAX(gaji)
 FROM kawahedukasi
-WHERE kawahedukasi.`kelas`='BACKEND';
+WHERE kelas='BACKEND';
 
 3. buatlah query untuk melihat total peserta yang berada dalam kelas frontend
 Jawab :
 
-SELECT kelas, COUNT(kelas) AS jmlkelas_frontend
+SELECT kelas, COUNT(kelas) AS jumlah_kelas
 FROM kawahedukasi
-WHERE kawahedukasi.`kelas`='FRONTEND';
+WHERE kelas='FRONTEND';
 
 4. buatlah query untuk menampilkan jumlah kehadiran tertinggi dan nilai tertinggi dalam kelas frontend
 Jawab: 
 
 SELECT kelas, MAX(jumlah_kehadiran), MAX(nilai)
 FROM kawahedukasi
-WHERE kawahedukasi.`kelas`='FRONTEND';
+WHERE kelas='FRONTEND';
